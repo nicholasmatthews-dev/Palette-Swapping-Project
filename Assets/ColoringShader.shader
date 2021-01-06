@@ -62,12 +62,21 @@
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // sample the texture
+                // Samples the main grayscale texture for the value at each pixel
                 fixed4 colA = tex2D(_MainTex, i.uv);
+
+                //Sets a coordinate based off the value of the grayscale texture which was sampled
                 float2 index = float2(colA[0],colA[0]) + _Offset;
+
+                //Isolates the decimal part of the index to cap the value between 0 and 1
                 index = frac(index);
+
+                //Uses the index value to sample the gradient texture, thus mapping from the grayscale to a gradient
                 fixed4 colB = tex2D(_GradientTex, index);
+
+                //Sets the alpha to the value of the original texture
                 colB[3] = colA[3];
+
                 return colB;
             }
 
