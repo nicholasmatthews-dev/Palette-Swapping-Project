@@ -63,8 +63,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Definitions.cs" />
     <Compile Include="Assets\Scripts\PaletteIndexScript.cs" />
-    <Compile Include="Assets\Scripts\TimeModulation.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\BasicSpectrumProvider.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\BiQuadFilterSource.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\ISpectrumProvider.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\LineSpectrum.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\ScalingStrategy.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\SpectrumBase.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\SpectrumSmoother.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\WasapiAudio.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Core\WasapiCaptureType.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\AudioVisualizationEffect.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\AudioVisualizationProfile.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\SpectrumTransformer.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\Transformers\AverageBoostSpectrumTransformer.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\Transformers\CurveScaledSpectrumTransformer.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\Transformers\SmoothSpectrumTransformer.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\WasapiAudioFilter.cs" />
+    <Compile Include="Assets\WasapiAudio\Scripts\Unity\WasapiAudioSource.cs" />
     <None Include="Assets\ColoringShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -248,6 +265,9 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="CSCore">
+      <HintPath>C:/Users/herre/Documents/Software/Palette Swapping Project/Assets/WasapiAudio/Plugins/CSCore.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
