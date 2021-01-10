@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Definitions.cs" />
     <Compile Include="Assets\Scripts\PaletteIndexScript.cs" />
+    <Compile Include="Assets\Scripts\TransformControls.cs" />
     <Compile Include="Assets\WasapiAudio\Scripts\Core\BasicSpectrumProvider.cs" />
     <Compile Include="Assets\WasapiAudio\Scripts\Core\BiQuadFilterSource.cs" />
     <Compile Include="Assets\WasapiAudio\Scripts\Core\ISpectrumProvider.cs" />

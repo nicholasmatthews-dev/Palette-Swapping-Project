@@ -28,7 +28,7 @@ namespace Assets.Scripts {
              * then grabs the material reference from the renderer in order to adjust the attached shader
              */
             objectRenderer = GetComponent<Renderer>();
-            objectMaterial = objectRenderer.sharedMaterial;
+            objectMaterial = objectRenderer.material;
 
 
             //Sets the initial offset of the gradient to the initial offset value
