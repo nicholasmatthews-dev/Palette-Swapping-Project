@@ -45,4 +45,9 @@ public class TransformControls : MonoBehaviour
     {
         return (currentZoom - _MinZoom) / (_MaxZoom - _MinZoom) + 0.5f;
     }
+
+    private void centerView()
+    {
+
+    }
 }

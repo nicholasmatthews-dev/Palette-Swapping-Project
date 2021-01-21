@@ -63,6 +63,10 @@
             {
                 // Samples the main grayscale texture for the value at each pixel
                 fixed4 colA = tex2D(_MainTex, i.uv);
+                
+            if (colA[3] == 0) {
+                    discard;
+                }
 
                 //Sets a coordinate based off the value of the grayscale texture which was sampled
                 float2 index = float2(colA[0],colA[0]) + _Offset;
